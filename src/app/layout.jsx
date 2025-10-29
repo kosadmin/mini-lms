@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
             <div className="border-t border-gray-100 pt-4 mt-6">
               <a
                 href="/logout"
-                className="flex items-center gap-3 text-gray-700 font-medium hover:text-[#fd6600] transition"
+                className="flex items-center gap-3 px-4 py-3 text-gray-700 font-medium hover:text-[#fd6600] transition"
               >
                   <span className="flex items-center gap-2">
                     <LogOutIcon className="w-4 h-4" />
