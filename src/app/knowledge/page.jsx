@@ -55,8 +55,7 @@ export default function KnowledgePage() {
     <div className="flex items-center justify-between gap-4 bg-[#ffdf99] py-3 px-4 rounded-t-2xl border-b-[2px] border-white">
       {/* Tiêu đề */}
       <h1 className="flex items-center gap-2 text-2xl font-bold text-black whitespace-nowrap">
-        <BookOpenIcon className="w-6 h-6" />
-        Kiến thức
+        📚 Kiến thức
       </h1>
 
       {/* Ô tìm kiếm */}

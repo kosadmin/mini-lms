@@ -1,7 +1,5 @@
-// app/layout.jsx
 import "./globals.css";
-import { Book, BookOpen, House, house, LogOutIcon } from "lucide-react";
-
+import { Book, BookOpen, House, house, LogOutIcon, ChevronRight } from "lucide-react";
 
 export const metadata = {
   title: "Mini LMS",
@@ -25,23 +23,49 @@ export default function RootLayout({ children }) {
               {/* Menu */}
               <nav className="flex flex-col">
                 <a
+                  href="/welcome"
+                  className="flex items-center gap-3 px-4 py-3 text-gray-700 font-medium rounded-lg hover:bg-[#fd6600] hover:text-white transition"
+                >
+                  <span>✨</span> Welcome
+                </a>
+
+                <a
                   href="/dashboard"
                   className="flex items-center gap-3 px-4 py-3 text-gray-700 font-medium rounded-lg hover:bg-[#fd6600] hover:text-white transition"
                 >
-                  <span className="flex items-center gap-2">
-                    <House className="w-4 h-4" />
-                    Dashboard
-                  </span>
+                  <span>🏠</span> Dashboard
                 </a>
+
+                {/* Mục Kiến thức */}
                 <a
                   href="/knowledge"
                   className="flex items-center gap-3 px-4 py-3 text-gray-700 font-medium rounded-lg hover:bg-[#fd6600] hover:text-white transition"
                 >
-                  <span className="flex items-center gap-2">
-                    <BookOpen className="w-4 h-4" />
-                    Kiến thức
-                  </span>
+                  <span>📚</span> Kiến thức
                 </a>
+
+                  {/* === Các mục con của Kiến thức === */}
+                  <div className="ml-5 mt-1 flex flex-col text-sm text-gray-700">
+                    <a
+                      href="/knowledge/onboard"
+                      className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-orange-100 hover:text-[#fd6600] transition"
+                    >
+                      <span>🚀</span> Onboard
+                    </a>
+                    <a
+                      href="/knowledge/news"
+                      className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-orange-100 hover:text-[#fd6600] transition"
+                    >
+                      <span>🆕</span> Tin tức
+                    </a>
+                    <a
+                      href="/knowledge/pro"
+                      className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-orange-100 hover:text-[#fd6600] transition"
+                    >
+                      <span>💼</span> Chuyên môn
+                    </a>
+                  </div>
+                {/* === Hết mục con === */}
               </nav>
             </div>
 
@@ -51,10 +75,10 @@ export default function RootLayout({ children }) {
                 href="/logout"
                 className="flex items-center gap-3 px-4 py-3 text-gray-700 font-medium hover:text-[#fd6600] transition"
               >
-                  <span className="flex items-center gap-2">
-                    <LogOutIcon className="w-4 h-4" />
-                    Đăng xuất
-                  </span>
+                <span className="flex items-center gap-2">
+                  <LogOutIcon className="w-4 h-4" />
+                  Đăng xuất
+                </span>
               </a>
             </div>
           </aside>
