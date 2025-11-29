@@ -56,13 +56,19 @@ export default function RootLayout({ children }) {
                       href="/knowledge/news"
                       className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-orange-100 hover:text-[#fd6600] transition"
                     >
-                      <span>🆕</span> Tin tức
+                      <span>🆕</span> Cập nhật Tin tức
                     </a>
                     <a
                       href="/knowledge/pro"
                       className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-orange-100 hover:text-[#fd6600] transition"
                     >
                       <span>💼</span> Chuyên môn
+                    </a>
+                    <a
+                      href="/knowledge/skill"
+                      className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-orange-100 hover:text-[#fd6600] transition"
+                    >
+                      <span>🧩</span> Kỹ năng
                     </a>
                   </div>
                 {/* === Hết mục con === */}
